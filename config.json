@@ -1,0 +1,7 @@
+{
+  "monitoring_interval": 300,
+  "default_timeout": 15,
+  "slow_threshold": 5,
+  "database": "data/monitoring.db",
+  "telegram_enabled": true
+}

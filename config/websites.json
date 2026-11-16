@@ -1,0 +1,33 @@
+
+{
+    "websites": [
+        {
+            "id": "website_1a4d29cbb82a",
+            "name": "SKM",
+            "url": "https://skm.go.id/",
+            "enabled": true,
+            "threshold_seconds": 5.0,
+            "workflow_enabled": true,
+            "workflow": [
+                {
+                    "action": "open",
+                    "url": "https://skm.go.id/",
+                    "wait_until": "load"
+                },
+                {
+                    "action": "check_url",
+                    "url": "skm.go.id"
+                }
+            ]
+        },
+        {
+            "id": "website_4cef1a6a2f3c",
+            "name": "Website DPRD Kota Bogor",
+            "url": "https://dprd.kotabogor.go.id/",
+            "enabled": true,
+            "threshold_seconds": 5.0,
+            "workflow_enabled": false,
+            "workflow": []
+        }
+    ]
+}
