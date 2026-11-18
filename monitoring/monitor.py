@@ -1,3 +1,4 @@
+
 import json
 
 from datetime import datetime
@@ -38,21 +39,20 @@ def check_one_website(site: dict, cfg: dict) -> dict:
         )
 
     # 2. Workflow Check
-    workflow = {
-        "status": "SKIPPED",
-        "message": "Workflow tidak diaktifkan.",
-        "duration": 0,
-        "page_load_time": None,
-        "final_url": None,
-        "page_title": None,
-        "steps": []
-    }
+    # Jika website belum memiliki workflow khusus,
+    # gunakan workflow dasar secara otomatis.
+    workflow_steps = site.get("workflow") or [
+        {
+            "action": "open",
+            "url": site["url"],
+            "wait_until": "load"
+        }
+    ]
 
-    if site.get("workflow_enabled", False):
-        workflow = run_workflow(
-            site.get("workflow", []),
-            int(cfg.get("default_timeout", 15)) * 1000
-        )
+    workflow = run_workflow(
+        workflow_steps,
+        int(cfg.get("default_timeout", 15)) * 1000
+    )
 
     # 3. Waktu pengecekan
     checked_at = datetime.now(

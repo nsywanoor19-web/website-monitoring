@@ -5,3 +5,5 @@ plotly
 playwright
 apscheduler
 python-dotenv
+openpyxl
+psutil
