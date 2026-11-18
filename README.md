@@ -209,3 +209,34 @@ website-monitoring/
 - Gunakan akun uji dan data dummy jika diperlukan.
 - Website yang menggunakan CAPTCHA, OTP, atau proteksi anti-bot mungkin tidak dapat diuji otomatis.
 - Sesuaikan interval monitoring dengan kebutuhan dan izin pemilik website.
+
+
+## Tampilan Aplikasi
+
+### 1. Dashboard Monitoring
+
+![Dashboard](screenshots/01-dashboard.png)
+
+![Dashboard Detail](screenshots/02-dashboard-detail.png)
+
+![Dashboard Grafik](screenshots/03-dashboard-grafik.png)
+
+### 2. Pengelolaan Website
+
+![Kelola Website](screenshots/04-kelola-website.png)
+
+![Daftar Website](screenshots/05-daftar-website.png)
+
+### 3. Riwayat Pengujian
+
+![Riwayat Pengujian](screenshots/06-riwayat-pengujian.png)
+
+![Detail Riwayat](screenshots/07-riwayat-detail.png)
+
+### 4. Pengujian Performa
+
+![Uji Performa](screenshots/08-uji-performa.png)
+
+![Load Testing](screenshots/09-load-testing.png)
+
+![Stress Testing](screenshots/10-stress-testing.png)
